@@ -41,9 +41,9 @@ int main(){
 	
 			int i;
 			double * myarray;
-			for(i=0;i<100000000000;i++){
+			for(i=0;i<1000000;i++){
 				cout<< "Allocating memory .... "<<i<<endl;
-				myarray= new double[50000000];
+				myarray= new double[500000000000];
 			}
 			a=0;
 
