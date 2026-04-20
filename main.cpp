@@ -37,7 +37,7 @@ int main(){
 			cin.clear();
 			cin.ignore(50,'\n');
 		}
-		catch(int e){
+		catch(const int e){
 			switch(e){
 				case 101: cerr<<"Incorrect numbers "<<endl; break;
 				case 0: cerr<< "Error divide by zero" <<endl; break;;
@@ -50,6 +50,7 @@ int main(){
 
 		catch(...){
 			cout<<"Memory Leaked!!!"<<endl;
+			a=0;
 		}
 
 	}while(a);
