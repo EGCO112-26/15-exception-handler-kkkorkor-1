@@ -41,10 +41,12 @@ int main(){
 	
 			int i;
 			double * myarray;
-			for(i=0;i<10;i++){
-				cout<< "Allocating memory number "<<i<<endl;
+			for(i=0;i<100000000000;i++){
+				cout<< "Allocating memory .... "<<i<<endl;
 				myarray= new double[50000000];
 			}
+			a=0;
+
 		}
 			
 		
