@@ -9,6 +9,14 @@ int main(){
 	do{
 		a=0;
 		try{
+			int i;
+			double * myarray;
+			for(i=0;i<100000;i++){
+				cout<< "Allocating memory number "<<i<<endl;
+				myarray= new double[50000000];
+			}
+
+
 		cout<<"Enter 2 Numbers: ";
 		cin>>x>>y;
 
@@ -38,6 +46,10 @@ int main(){
 			cin.clear();
 			cin.ignore(50,'\n');
 
+		}
+
+		catch(...){
+			cout<<"Memory Leaked!!!"<<endl;
 		}
 
 	}while(a);
